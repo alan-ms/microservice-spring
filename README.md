@@ -1,4 +1,4 @@
-# Projeto do curso de Microserviço com Spring
+# Microserviço com Spring - Alura Food
 
 ## O que foi implementado
   * Configuração do servidor Eureka (Spring Cloud) para registro Service Discovery e Service Registry
