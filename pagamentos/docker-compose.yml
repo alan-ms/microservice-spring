@@ -1,0 +1,10 @@
+version: '3'
+services:
+  pagamentos_db:
+    image: mysql
+    restart: always
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_DATABASE: alurafood-pagamentos
+      MYSQL_ROOT_PASSWORD: root

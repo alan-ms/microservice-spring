@@ -1,0 +1,16 @@
+server:
+  port: 8082
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8081/eureka
+spring:
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true # gateway enables the function of service registration and discovery, and spring cloud gateway
+          # automatically creates a router for each service based on service discovery, and this router will start with the service name.
+          lower-case-service-id: true # Service name set to lower case
